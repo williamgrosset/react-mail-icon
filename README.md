@@ -46,90 +46,90 @@ export default App
 ## Props
 #### style
 
-Type: `Object`
+Type: `Object`<br>
 Optional: `true`
 
 CSS styling for the component.
 
 #### mailBackFoldColor
 
-Type: `String`
-Default: `#2874A6`
+Type: `String`<br>
+Default: `#2874A6`<br>
 Optional: `true`
 
 Color of the mail back fold.
 
 #### mailTopFoldColor
 
-Type: `String`
-Default: `#2E86C1`
+Type: `String`<br>
+Default: `#2E86C1`<br>
 Optional: `true`
 
 Color of the mail top fold.
 
 #### mailLeftFoldColor
 
-Type: `String`
-Default: `#3498DB`
+Type: `String`<br>
+Default: `#3498DB`<br>
 Optional: `true`
 
 Color of the mail left fold.
 
 #### mailRightFoldColor
 
-Type: `String`
-Default: `#5DADE2`
+Type: `String`<br>
+Default: `#5DADE2`<br>
 Optional: `true`
 
 Color of the mail right fold.
 
 #### letterBackgroundColor
 
-Type: `String`
-Default: `#FFFFFF`
+Type: `String`<br>
+Default: `#FFFFFF`<br>
 Optional: `true`
 
 Color of the letter background.
 
 #### letterBorderColor
 
-Type: `String`
-Default: `#1ABC9C`
+Type: `String`<br>
+Default: `#1ABC9C`<br>
 Optional: `true`
 
 Color of the letter border.
 
 #### letterTextColor
 
-Type: `String`
-Default: `#1ABC9C`
+Type: `String`<br>
+Default: `#1ABC9C`<br>
 Optional: `true`
 
 Color of the letter text.
 
 #### shouldAnimateOpen
 
-Type: `Boolean`
-Default: `false`
+Type: `Boolean`<br>
+Default: `false`<br>
 Optional: `true`
 
-If the mail should animate open and the letter should animate up.
+If `true`, the mail should animate open and the letter should animate up.
 
 #### shouldAnimateDown
 
-Type: `Boolean`
-Default: `false`
+Type: `Boolean`<br>
+Default: `false`<br>
 Optional: `true`
 
-If the mail should animate down when opened.
+If `true`, the mail should animate down when opened.
 
 #### shouldAnimateOnHover
 
-Type: `Boolean`
-Default: `false`
+Type: `Boolean`<br>
+Default: `false`<br>
 Optional: `true`
 
-If the mail should animate when hovered (`shouldAnimateOpen` takes precendence).
+If `true`, the mail should animate when hovered (`shouldAnimateOpen` takes precendence).
 
 ## License
 MIT
