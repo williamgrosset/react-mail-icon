@@ -12,7 +12,7 @@ $ npm install react-mail-icon
 ## Usage
 ```jsx
 import React, { useState } from 'react'
-import MailIcon from './MailIcon'
+import { MailIcon } from 'react-mail-icon'
 
 const mailIconStyle = {
   display: 'flex'
@@ -43,8 +43,93 @@ const App: React.FC = () => {
 export default App
 ```
 
-## API
-TODO.
+## Props
+#### style
+
+Type: `Object`
+Optional: `true`
+
+CSS styling for the component.
+
+#### mailBackFoldColor
+
+Type: `String`
+Default: `#2874A6`
+Optional: `true`
+
+Color of the mail back fold.
+
+#### mailTopFoldColor
+
+Type: `String`
+Default: `#2E86C1`
+Optional: `true`
+
+Color of the mail top fold.
+
+#### mailLeftFoldColor
+
+Type: `String`
+Default: `#3498DB`
+Optional: `true`
+
+Color of the mail left fold.
+
+#### mailRightFoldColor
+
+Type: `String`
+Default: `#5DADE2`
+Optional: `true`
+
+Color of the mail right fold.
+
+#### letterBackgroundColor
+
+Type: `String`
+Default: `#FFFFFF`
+Optional: `true`
+
+Color of the letter background.
+
+#### letterBorderColor
+
+Type: `String`
+Default: `#1ABC9C`
+Optional: `true`
+
+Color of the letter border.
+
+#### letterTextColor
+
+Type: `String`
+Default: `#1ABC9C`
+Optional: `true`
+
+Color of the letter text.
+
+#### shouldAnimateOpen
+
+Type: `Boolean`
+Default: `false`
+Optional: `true`
+
+If the mail should animate open and the letter should animate up.
+
+#### shouldAnimateDown
+
+Type: `Boolean`
+Default: `false`
+Optional: `true`
+
+If the mail should animate down when opened.
+
+#### shouldAnimateOnHover
+
+Type: `Boolean`
+Default: `false`
+Optional: `true`
+
+If the mail should animate when hovered (`shouldAnimateOpen` takes precendence).
 
 ## License
 MIT

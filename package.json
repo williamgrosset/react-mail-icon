@@ -1,36 +1,46 @@
 {
   "name": "react-mail-icon",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@types/jest": "24.0.18",
-    "@types/node": "12.7.5",
-    "@types/react": "16.9.2",
-    "@types/react-dom": "16.9.0",
+  "version": "1.0.0",
+  "description": "Simple, animated, and customizable React mail icon.",
+  "author": "William Grosset",
+  "license": "MIT",
+  "repository": "williamgrosset/react-mail-icon",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build-react-component",
+    "build:ts": "tsc",
+    "build:all": "npm-run-all copy:css-to-lib build:ts",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "prepublishOnly": "npm run build:ts&&npm run build&&npm run build",
+    "start": "nwb serve-react-demo",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.7",
+    "@types/react": "^16.9.3",
+    "@types/react-dom": "^16.9.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "nwb": "0.23.x",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.2",
-    "typescript": "3.6.3"
+    "typescript": "^3.6.3"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "keywords": [
+    "react-component",
+    "jsx",
+    "mail",
+    "icon"
+  ]
 }

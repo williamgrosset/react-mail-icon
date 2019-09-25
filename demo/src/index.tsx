@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import MailIcon from './MailIcon'
-import './App.css'
+import ReactDOM from 'react-dom'
+import { MailIcon } from '../../src'
+import './styles.css'
 
 const divStyle = {
   display: 'flex',
@@ -42,4 +43,4 @@ const App: React.FC = () => {
   )
 }
 
-export default App
+ReactDOM.render(<App />, document.querySelector('#demo'))
