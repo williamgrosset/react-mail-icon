@@ -11,8 +11,14 @@ module.exports = {
       }
       config.resolve.extensions = ['.ts', '.tsx', '.js', '.jsx']
       config.module.rules.push({
-        'test': /\.tsx?$/,
-        'loader': 'awesome-typescript-loader',
+        test: /\.tsx?$/,
+        loader: 'awesome-typescript-loader',
+      }, {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
       })
 
       return config
